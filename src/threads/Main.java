@@ -49,10 +49,10 @@ public class Main {
             varRuntime += Math.pow(term, 2) / (double) NUM_EXEC;
         }
 
-        double patternDeviation = Math.sqrt(varRuntime);
+        double patternDeviationRuntime = Math.sqrt(varRuntime);
         System.out.printf("\n\nNum execuções:%d\nmédia duração:%.4fms\n", numTerms, averageRuntime);
-        System.out.printf("desvio padrão duração:%.4fms\n", patternDeviation);
-        System.out.printf("coeficiente de duração:%.4f%%\n",(patternDeviation / averageRuntime) * 100);
+        System.out.printf("desvio padrão duração:%.4fms\n", patternDeviationRuntime);
+        System.out.printf("coeficiente de duração:%.4f%%\n",(patternDeviationRuntime / averageRuntime) * 100);
         System.out.printf("Pi:%s\n", Arrays.toString(pi));
     }
     private static class ApproxiPi extends Thread{
