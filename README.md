@@ -1,2 +1,2 @@
-# Calculo-de-PI-Usando-Threads
+# Calculo de π Usando Threads
  
