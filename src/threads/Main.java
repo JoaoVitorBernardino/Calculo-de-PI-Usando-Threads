@@ -7,16 +7,14 @@ public class Main {
 
     public static void main(String[] args) throws InterruptedException {
         int NUM_EXEC = 5;
+        double[] runtime = new double[NUM_EXEC];
+        double[] pi = new double[NUM_EXEC];
 
         Scanner reply = new Scanner(System.in);
         System.out.print("Digite o número de termos: ");
         int numTerms = reply.nextInt();
         System.out.print("Digite o número de threads: ");
         int numThreads = reply.nextInt();
-
-
-        double[] runtime = new double[NUM_EXEC];
-        double[] pi = new double[NUM_EXEC];
 
         for(int i = 0; i < NUM_EXEC; i++){
             long start = System.nanoTime();
